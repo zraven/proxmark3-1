@@ -12,12 +12,13 @@
 #ifndef __STRING_H
 #define __STRING_H
 
-#include <stddef.h>
+#include <stdint.h>
+#include "util.h"
 
-void *memcpy(void *dest, const void *src, size_t len);
+RAMFUNC void *memcpy(void *dest, const void *src, size_t len);
 void *memset(void *dest, int c, size_t len);
 void *memmove(void *dest, const void *src, size_t len);
-int memcmp(const void *av, const void *bv, size_t len);
+RAMFUNC int memcmp(const void *av, const void *bv, size_t len);
 size_t strlen(const char *str);
 char *strncat(char *dest, const char *src, size_t n);
 char *strcat(char *dest, const char *src);

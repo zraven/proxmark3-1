@@ -19,8 +19,6 @@
 #include "BigBuf.h"
 #include "apps.h"
 #include "usb_cdc.h"
-#include "util.h"
-
 
 #ifdef WITH_SMARTCARD
 #include "smartcard.h"
